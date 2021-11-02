@@ -1,0 +1,6 @@
+module Pods_SwiftLottie {
+  umbrella header "Pods-SwiftLottie-umbrella.h"
+
+  export *
+  module * { export * }
+}
