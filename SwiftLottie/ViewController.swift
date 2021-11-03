@@ -34,13 +34,38 @@ class ViewController: UIViewController {
         // Console log the animnations key paths (to understand our element references)
         animationView.logHierarchyKeypaths()
         
-        // Create ColorValueProvider using Lottie's Color class
-        let orange = Color(r: (251/255), g: (140/255), b: (0/255), a: 1)
-        let orangeColorValueProvider = ColorValueProvider(orange)
-        // Set color value provider to animation view
-        let keyPath = AnimationKeypath(keypath: "**.Fill 1.Color")
-        animationView.setValueProvider(orangeColorValueProvider, keypath: keyPath)
         
+        
+        /***
+         BEGIN PENROSE TRIANGLE THEME ADJUSTMENTS
+         ***/
+        
+        // Create ColorValueProvider using Lottie's Color class
+        let bioticPink = Color(r: (200/255), g: (11/255), b: (202/255), a: 1)
+        let bioticPinkColorProvider = ColorValueProvider(bioticPink)
+        let keyPath = AnimationKeypath(keypath: "**.right-triangle.right-triangle.Fill 1.Color")
+        animationView.setValueProvider(bioticPinkColorProvider, keypath: keyPath)
+        
+        let bioticPink60 = Color(r: (212/255), g: (99/255), b: (213/255), a: 1)
+        let bioticPink60ColorProvider = ColorValueProvider(bioticPink60)
+        let keyPath2 = AnimationKeypath(keypath: "**.left-triangle.left-triangle.Fill 1.Color")
+        animationView.setValueProvider(bioticPink60ColorProvider, keypath: keyPath2)
+        
+        let bioticPink20 = Color(r: (223/255), g: (185/255), b: (223/255), a: 1)
+        let bioticPink20ColorProvider = ColorValueProvider(bioticPink20)
+        let keyPath3 = AnimationKeypath(keypath: "**.bottom-triangle.bottom-triangle.Fill 1.Color")
+        animationView.setValueProvider(bioticPink20ColorProvider, keypath: keyPath3)
+        
+        // Change dots opacity (range 0 ~ 100)
+        let opacityValueProvider = FloatValueProvider(CGFloat(20))
+        let dotOpacityKeyPath = AnimationKeypath(keypath: "**.right-triangle.right-triangle.Fill 1.Opacity")
+        animationView.setValueProvider(opacityValueProvider, keypath: dotOpacityKeyPath)
+        
+        
+        
+        /***
+         BEGIN TWITTER HEART THEME ADJUSTMENTS
+         ***/
         
         // Scale up dots & ellipse
 //        let scaleValueProvider = SizeValueProvider(CGSize(width: 200, height: 200))
@@ -48,14 +73,9 @@ class ViewController: UIViewController {
 //        animationView.setValueProvider(scaleValueProvider, keypath: dotKeyPath)
 //        let ellipseKeyPath = AnimationKeypath(keypath: "C*.Ellipse 1.Scale")
 //        animationView.setValueProvider(scaleValueProvider, keypath: ellipseKeyPath)
-        
-        
-        // Change dots opacity (range 0 ~ 100)
-//        let opacityValueProvider = FloatValueProvider(CGFloat(50))
-//        let dotOpacityKeyPath = AnimationKeypath(keypath: "Dot*.Shape 1.Opacity")
-//        animationView.setValueProvider(opacityValueProvider, keypath: dotOpacityKeyPath)
 
         
+        // Play the animation
         animationView?.play()
     }
 
