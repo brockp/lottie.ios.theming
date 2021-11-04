@@ -18,6 +18,7 @@
 		125FE38C2729A8AE0027F326 /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 125FE38B2729A8AE0027F326 /* DownloadViewController.xib */; };
 		12813825272895990082EF4D /* penrose-triangle.json in Resources */ = {isa = PBXBuildFile; fileRef = 12813824272895990082EF4D /* penrose-triangle.json */; };
 		1281382E27299F6A0082EF4D /* download.json in Resources */ = {isa = PBXBuildFile; fileRef = 1281382D27299F6A0082EF4D /* download.json */; };
+		1294E066273466D6008ED8DB /* TwitterHeartButton.json in Resources */ = {isa = PBXBuildFile; fileRef = 1294E065273466D6008ED8DB /* TwitterHeartButton.json */; };
 		FE6BA169BE2B8339E8672E52 /* libPods-SwiftLottie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C85F8C2CE221A4B37F10C820 /* libPods-SwiftLottie.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		125FE38B2729A8AE0027F326 /* DownloadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadViewController.xib; sourceTree = "<group>"; };
 		12813824272895990082EF4D /* penrose-triangle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "penrose-triangle.json"; path = "../../../../../Downloads/penrose-triangle.json"; sourceTree = "<group>"; };
 		1281382D27299F6A0082EF4D /* download.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = download.json; sourceTree = "<group>"; };
+		1294E065273466D6008ED8DB /* TwitterHeartButton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeartButton.json; sourceTree = "<group>"; };
 		92C53411D07DCC064AD2B1F7 /* Pods-SwiftLottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLottie.release.xcconfig"; path = "Target Support Files/Pods-SwiftLottie/Pods-SwiftLottie.release.xcconfig"; sourceTree = "<group>"; };
 		C85F8C2CE221A4B37F10C820 /* libPods-SwiftLottie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftLottie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 		125AE06F2728890700185241 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1294E065273466D6008ED8DB /* TwitterHeartButton.json */,
 				123938EE272B32720084C9C6 /* TwitterHeart.json */,
 				1281382D27299F6A0082EF4D /* download.json */,
 				12813824272895990082EF4D /* penrose-triangle.json */,
@@ -200,6 +203,7 @@
 			files = (
 				12813825272895990082EF4D /* penrose-triangle.json in Resources */,
 				125AE066272887EC00185241 /* LaunchScreen.storyboard in Resources */,
+				1294E066273466D6008ED8DB /* TwitterHeartButton.json in Resources */,
 				125FE38C2729A8AE0027F326 /* DownloadViewController.xib in Resources */,
 				125AE063272887EC00185241 /* Assets.xcassets in Resources */,
 				125AE061272887EA00185241 /* Main.storyboard in Resources */,
