@@ -83,7 +83,7 @@ class DownloadViewController: UIViewController {
 extension DownloadViewController: URLSessionDownloadDelegate {
     
     private func download() {
-        let url = URL(string: "https://archive.org/download/SampleVideo1280x7205mb/SampleVideo_1280x720_5mb.mp4")!
+        let url = URL(string: "https://archive.org/download/kittenscatsbooko00grov/kittenscatsbooko00grov.epub")!
         
         let configuration = URLSessionConfiguration.default
         let operationQueue = OperationQueue()
