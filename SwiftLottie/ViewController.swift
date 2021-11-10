@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         // Console log the animnations key paths (to understand our element references)
         animationView.logHierarchyKeypaths()
         
+        // Console log markers in the animation (if they exist)
         let jsonName = "TwitterHeartButton"
         let animation = Animation.named(jsonName)!
         let markerNames = animation.markerNames
@@ -43,8 +44,6 @@ class ViewController: UIViewController {
             print("Progress: \(String(describing: animation.progressTime(forMarker: name)))")
             print("")
         }
-        
-        
         
         /***
          BEGIN PENROSE TRIANGLE THEME ADJUSTMENTS
@@ -83,7 +82,6 @@ class ViewController: UIViewController {
         animationView.setValueProvider(scaleValueProvider, keypath: dotKeyPath)
         let ellipseKeyPath = AnimationKeypath(keypath: "C*.Ellipse 1.Scale")
         animationView.setValueProvider(scaleValueProvider, keypath: ellipseKeyPath)
-
         
         // Play the animation
         animationView?.play()
